@@ -93,10 +93,6 @@ em{font-style:italic}
 .link-arrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;text-decoration:none;border-bottom:1.5px solid currentColor;padding-bottom:3px;transition:gap .25s var(--ease)}
 .link-arrow:hover{gap:13px}
 
-/* ---------- aviso demo ---------- */
-.demo-bar{background:var(--cafe);color:var(--muted-on-dark);font-size:12.5px;text-align:center;padding:8px 16px;line-height:1.4}
-.demo-bar b{color:var(--arena);font-weight:600}
-
 /* ---------- header ---------- */
 .site-header{position:absolute;top:auto;left:0;right:0;z-index:30}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:22px}
@@ -115,7 +111,7 @@ em{font-style:italic}
 .sticky-nav .logo-sub{display:none}
 
 /* ---------- hero ---------- */
-.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:max(660px,min(calc(100svh - 34px),960px))}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:max(660px,min(100svh,960px))}
 .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:120px clamp(24px,4vw,56px) 56px max(clamp(16px,4.5vw,48px),calc((100vw - var(--wrap))/2 + clamp(16px,4.5vw,48px)))}
 .hero h1{font-size:clamp(40px,4.1vw,64px);margin:20px 0 22px}
 .hero h1 em{color:var(--terra-deep)}
@@ -326,7 +322,6 @@ footer{background:#2C2220;color:var(--muted-on-dark);font-size:13.5px}
   .hero-tag{display:none}
   .rating-chip{bottom:52px;padding:10px 14px 10px 12px;gap:10px}
   .rating-chip .big{font-size:30px}
-  .demo-bar{font-size:11.5px;padding:7px 14px}
   .hero h1{font-size:clamp(36px,10vw,46px)}
   .site-header{position:absolute;top:auto}
   .trat-block,.trat-block.rev{grid-template-columns:1fr}
@@ -363,9 +358,6 @@ footer{background:#2C2220;color:var(--muted-on-dark);font-size:13.5px}
 </style>
 </head>
 <body>
-
-<!-- Aviso de demo: borrar este bloque cuando la web quede con datos reales -->
-<div class="demo-bar"><b>Vista previa para Solnand.</b> Tratamientos, promos, precios y horarios son de ejemplo: los ajustamos juntas con tu info real.</div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -461,7 +453,7 @@ footer{background:#2C2220;color:var(--muted-on-dark);font-size:13.5px}
           <li>Medición al inicio y al final</li>
         </ul>
         <div class="promo-foot">
-          <div class="promo-price"><span class="sessions">8 sesiones</span><span class="price">$ 00.000<small>precio de ejemplo</small></span></div>
+          <div class="promo-price"><span class="sessions">8 sesiones</span><span class="price">$ 00.000</span></div>
           <a class="btn btn-line" data-wa="Hola Solnand! Quiero la promo Plan Reductor (8 sesiones)." href="#contacto">Quiero esta promo</a>
         </div>
       </article>
@@ -477,7 +469,7 @@ footer{background:#2C2220;color:var(--muted-on-dark);font-size:13.5px}
           <li>Hidratación con mascarilla</li>
         </ul>
         <div class="promo-foot">
-          <div class="promo-price"><span class="sessions">6 + 2 sesiones</span><span class="price">$ 00.000<small>precio de ejemplo</small></span></div>
+          <div class="promo-price"><span class="sessions">6 + 2 sesiones</span><span class="price">$ 00.000</span></div>
           <a class="btn btn-sol" data-wa="Hola Solnand! Quiero la promo Cuerpo + Rostro." href="#contacto"><svg><use href="#i-wa"/></svg>Quiero esta promo</a>
         </div>
       </article>
@@ -492,12 +484,11 @@ footer{background:#2C2220;color:var(--muted-on-dark);font-size:13.5px}
           <li>Hidratación antiage</li>
         </ul>
         <div class="promo-foot">
-          <div class="promo-price"><span class="sessions">3 sesiones</span><span class="price">$ 00.000<small>precio de ejemplo</small></span></div>
+          <div class="promo-price"><span class="sessions">3 sesiones</span><span class="price">$ 00.000</span></div>
           <a class="btn btn-line" data-wa="Hola Solnand! Quiero la promo Piel Luminosa (3 sesiones)." href="#contacto">Quiero esta promo</a>
         </div>
       </article>
     </div>
-    <p class="promo-note rv"><span class="pill-edit">Editable</span> Las promos cambian cada mes: se actualizan en minutos, sin tocar el resto de la web.</p>
   </div>
 </section>
 
@@ -634,7 +625,7 @@ footer{background:#2C2220;color:var(--muted-on-dark);font-size:13.5px}
       <p class="rv d2">Si nunca te hiciste un tratamiento, tranqui: te explicamos todo antes de empezar.</p>
     </div>
     <ol class="steps" style="list-style:none;margin:0;padding:0">
-      <li class="step rv"><span class="n">1</span><h3>Evaluación</h3><p>Charlamos sobre lo que querés lograr y analizamos tu piel o la zona a tratar.</p><span class="tag">Sin cargo · a confirmar</span></li>
+      <li class="step rv"><span class="n">1</span><h3>Evaluación</h3><p>Charlamos sobre lo que querés lograr y analizamos tu piel o la zona a tratar.</p><span class="tag">Sin cargo</span></li>
       <li class="step rv d1"><span class="n">2</span><h3>Tu plan de sesiones</h3><p>Te proponemos el tratamiento ideal, cuántas sesiones necesitás y la promo que más te conviene.</p><span class="tag">Claro y sin sorpresas</span></li>
       <li class="step rv d2"><span class="n">3</span><h3>Seguimiento</h3><p>Medimos y registramos tu avance sesión a sesión para ajustar y que veas el resultado.</p><span class="tag">Resultados que se miden</span></li>
     </ol>
@@ -685,11 +676,11 @@ footer{background:#2C2220;color:var(--muted-on-dark);font-size:13.5px}
       </details>
       <details>
         <summary>¿Qué medios de pago aceptan?<span class="pm" aria-hidden="true"></span></summary>
-        <div class="ans"><p>Efectivo, transferencia y Mercado Pago <span class="pill-edit" style="margin-left:4px">a confirmar</span></p></div>
+        <div class="ans"><p>Efectivo, transferencia y Mercado Pago</p></div>
       </details>
       <details>
         <summary>¿Puedo pagar en cuotas?<span class="pm" aria-hidden="true"></span></summary>
-        <div class="ans"><p>Consultanos por las opciones de cuotas vigentes para los packs y promos del mes. <span class="pill-edit" style="margin-left:4px">a confirmar</span></p></div>
+        <div class="ans"><p>Consultanos por las opciones de cuotas vigentes para los packs y promos del mes.</p></div>
       </details>
       <details>
         <summary>¿Cuándo voy a ver resultados?<span class="pm" aria-hidden="true"></span></summary>
@@ -711,9 +702,9 @@ footer{background:#2C2220;color:var(--muted-on-dark);font-size:13.5px}
       <h2 id="contact-title" class="rv d1">Te esperamos <em>en Godoy Cruz.</em></h2>
       <ul class="contact-list rv d2">
         <li><span class="k">Dirección</span><span>Figueroa Alcorta 161, Godoy Cruz, Mendoza</span></li>
-        <li><span class="k">WhatsApp</span><span><a data-wa="Hola Solnand! Quiero reservar una sesión." href="#">+54 00 0000-0000</a><span class="tbd">a completar</span></span></li>
-        <li><span class="k">Horarios</span><span>Lunes a viernes · 9 a 20 h<br>Sábados · 9 a 13 h<span class="tbd">a completar</span></span></li>
-        <li><span class="k">Redes</span><span><a href="https://www.facebook.com/centroesteticasolnand0/" target="_blank" rel="noopener">Facebook</a> &nbsp;·&nbsp; <a href="#">Instagram</a><span class="tbd">a completar</span></span></li>
+        <li><span class="k">WhatsApp</span><span><a data-wa="Hola Solnand! Quiero reservar una sesión." href="#">+54 00 0000-0000</a></span></li>
+        <li><span class="k">Horarios</span><span>Lunes a viernes · 9 a 20 h<br>Sábados · 9 a 13 h</span></li>
+        <li><span class="k">Redes</span><span><a href="https://www.facebook.com/centroesteticasolnand0/" target="_blank" rel="noopener">Facebook</a> &nbsp;·&nbsp; <a href="#">Instagram</a></span></li>
       </ul>
       <div class="contact-ctas rv d3">
         <a class="btn btn-sol" data-wa="Hola Solnand! Quiero reservar una sesión." href="#"><svg><use href="#i-wa"/></svg>Reservá por WhatsApp</a>
