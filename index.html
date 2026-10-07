@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solnand Centro de Estética | Tratamientos Corporales y Faciales en Godoy Cruz, Mendoza</title>
+<meta name="description" content="Tratamientos reductores, faciales y corporales en Godoy Cruz. Resultados desde la primera sesión, promos todo el año y horarios amplios. Reservá por WhatsApp.">
+<meta name="keywords" content="centro de estética Godoy Cruz, tratamientos reductores Mendoza, limpieza facial Godoy Cruz, drenaje linfático Mendoza, estética corporal Godoy Cruz">
+<meta name="theme-color" content="#F4EDE4">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="Solnand Centro de Estética · Godoy Cruz, Mendoza">
+<meta property="og:description" content="Tratamientos corporales y faciales con resultados desde la primera sesión. Promos todo el año.">
+<meta property="og:image" content="img/hero-sol.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233B2E2A'/%3E%3Cpath d='M7 21a9 9 0 0 1 18 0z' fill='%23D9A65A'/%3E%3Crect x='5' y='23' width='22' height='2' rx='1' fill='%23F4EDE4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="preload" as="image" href="img/hero-sol.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Solnand Centro de Estética",
+  "description": "Centro de estética especializado en tratamientos corporales y faciales en Godoy Cruz, Mendoza.",
+  "image": "img/hero-sol.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Figueroa Alcorta 161",
+    "addressLocality": "Godoy Cruz",
+    "addressRegion": "Mendoza",
+    "postalCode": "M5501BSC",
+    "addressCountry": "AR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -32.92731, "longitude": -68.84094 },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "21", "bestRating": "5" },
+  "telephone": "+54 00 0000-0000",
+  "openingHours": ["Mo-Fr 09:00-20:00", "Sa 09:00-13:00"],
+  "sameAs": ["https://www.facebook.com/centroesteticasolnand0/"],
+  "priceRange": "$$"
+}
+</script>
+
+<style>
+/*
+  SOLNAND — dirección visual
+  Luz de siesta mendocina: arena cálida, un dorado de sol bajo, terracota rosada y café para el texto.
+  Fotos grandes y editoriales; tarjetas sólo donde hay que comparar (promos). El "sol" aparece como
+  un semicírculo que asoma sobre una línea (horizonte), nunca como un sol de dibujito.
+*/
+:root{
+  --arena:#F4EDE4; --arena-2:#EBE0D2; --arena-3:#E2D3C1; --crema:#FBF7F2;
+  --sol:#D9A65A; --sol-deep:#9C6B22; --terra:#C98A7A; --terra-deep:#A2614F;
+  --cafe:#3B2E2A; --cafe-2:#4A3A35; --muted:#6E5C55; --muted-on-dark:#C9B8AC;
+  --line:rgba(59,46,42,.14); --line-dark:rgba(244,237,228,.16);
+  --wa:#1FAF5A;
+  --serif:"DM Serif Display",Georgia,"Times New Roman",serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --wrap:1200px; --ease:cubic-bezier(.22,.8,.24,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--arena);color:var(--cafe);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;line-height:1.04;letter-spacing:-.012em;text-wrap:balance}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+em{font-style:italic}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(16px,4.5vw,48px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sol-deep)}
+.eyebrow::before{content:"";width:22px;height:11px;border-radius:22px 22px 0 0;background:var(--sol);box-shadow:0 2px 0 -1px var(--sol-deep)}
+.dark .eyebrow{color:var(--sol)}
+.dark .eyebrow::before{box-shadow:0 2px 0 -1px var(--arena)}
+:focus-visible{outline:2px solid var(--sol-deep);outline-offset:3px;border-radius:4px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- botones ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 15px/1 var(--sans);text-decoration:none;padding:18px 26px;border-radius:999px;border:1.5px solid transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .2s var(--ease),box-shadow .25s;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-wa{background:var(--cafe);color:var(--arena)}
+.btn-wa:hover{background:#2A201D;box-shadow:0 10px 24px -12px rgba(59,46,42,.7)}
+.btn-wa .dot{width:8px;height:8px;border-radius:50%;background:#4ADE80;box-shadow:0 0 0 3px rgba(74,222,128,.25)}
+.btn-line{border-color:var(--cafe);color:var(--cafe);background:transparent}
+.btn-line:hover{background:var(--cafe);color:var(--arena)}
+.btn-sol{background:var(--sol);color:var(--cafe)}
+.btn-sol:hover{background:#E4B56E}
+.btn-light{background:var(--arena);color:var(--cafe)}
+.btn-light:hover{background:#fff}
+.link-arrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;text-decoration:none;border-bottom:1.5px solid currentColor;padding-bottom:3px;transition:gap .25s var(--ease)}
+.link-arrow:hover{gap:13px}
+
+/* ---------- aviso demo ---------- */
+.demo-bar{background:var(--cafe);color:var(--muted-on-dark);font-size:12.5px;text-align:center;padding:8px 16px;line-height:1.4}
+.demo-bar b{color:var(--arena);font-weight:600}
+
+/* ---------- header ---------- */
+.site-header{position:absolute;top:auto;left:0;right:0;z-index:30}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:22px}
+.logo{display:inline-flex;align-items:center;gap:11px;text-decoration:none}
+.logo-mark{width:34px;height:34px;flex:none}
+.logo-word{font-family:var(--serif);font-size:27px;line-height:1;letter-spacing:-.01em}
+.logo-sub{display:block;font-family:var(--sans);font-size:9.5px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav-links{display:flex;gap:30px;font-size:14px;font-weight:600}
+.nav-links a{text-decoration:none;opacity:.82;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.nav .btn{padding:13px 20px;font-size:14px}
+.sticky-nav{position:fixed;top:0;left:0;right:0;z-index:40;background:rgba(244,237,228,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transform:translateY(-100%);transition:transform .45s var(--ease)}
+.sticky-nav.on{transform:none}
+.sticky-nav .nav{padding-block:12px}
+.sticky-nav .logo-word{font-size:23px}
+.sticky-nav .logo-sub{display:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:max(660px,min(calc(100svh - 34px),960px))}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:120px clamp(24px,4vw,56px) 56px max(clamp(16px,4.5vw,48px),calc((100vw - var(--wrap))/2 + clamp(16px,4.5vw,48px)))}
+.hero h1{font-size:clamp(40px,4.1vw,64px);margin:20px 0 22px}
+.hero h1 em{color:var(--terra-deep)}
+.hero-sub{font-size:clamp(16px,1.3vw,18.5px);color:var(--muted);max-width:30em}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:36px;padding-top:24px;border-top:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--muted)}
+.hero-facts li{display:flex;align-items:center;gap:9px}
+.hero-facts svg{width:18px;height:18px;color:var(--sol-deep)}
+.hero-media{position:relative;overflow:hidden;background:var(--arena-2)}
+.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%;transform:scale(1.06);animation:heroIn 1.8s var(--ease) .1s forwards}
+@keyframes heroIn{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(244,237,228,.35),transparent 18%),radial-gradient(120% 70% at 85% 0%,rgba(217,166,90,.18),transparent 60%);pointer-events:none}
+.rating-chip{position:absolute;left:clamp(16px,3vw,36px);bottom:clamp(16px,3vw,36px);z-index:2;display:flex;align-items:center;gap:14px;background:rgba(251,247,242,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:14px 20px 14px 16px;border-radius:18px;box-shadow:0 20px 40px -24px rgba(59,46,42,.55);text-decoration:none}
+.rating-chip .big{font-family:var(--serif);font-size:38px;line-height:1}
+.rating-chip .stars{color:var(--sol);font-size:14px;letter-spacing:2px}
+.rating-chip small{display:block;font-size:12.5px;font-weight:600;color:var(--muted)}
+.hero-tag{position:absolute;right:clamp(16px,2.4vw,30px);top:50%;z-index:2;writing-mode:vertical-rl;transform:translateY(-50%) rotate(180deg);font-size:11px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:rgba(59,46,42,.55)}
+
+/* ---------- franja ---------- */
+.strip{background:var(--cafe);color:var(--arena);overflow:hidden}
+.strip ul{display:flex;width:max-content;padding-block:20px;animation:slide 48s linear infinite}
+.strip:hover ul{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+.strip li{font-family:var(--serif);font-size:clamp(17px,1.6vw,22px);padding-inline:18px;display:flex;align-items:center;gap:36px;white-space:nowrap}
+.strip li:not(:last-child)::after{content:"";width:12px;height:6px;border-radius:12px 12px 0 0;background:var(--sol);margin-left:18px}
+.strip li{gap:0}
+
+/* ---------- secciones ---------- */
+section{position:relative}
+.sec{padding-block:clamp(80px,10vw,140px)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:clamp(40px,5vw,64px)}
+.sec-head h2,.h2{font-size:clamp(36px,4.4vw,62px);margin-top:16px}
+.sec-head h2 em,.h2 em{color:var(--terra-deep)}
+.dark .h2 em,.dark h2 em{color:var(--sol)}
+.sec-head p{max-width:30em;color:var(--muted)}
+.dark{background:var(--cafe);color:var(--arena)}
+.dark .muted,.dark .sec-head p{color:var(--muted-on-dark)}
+
+/* ---------- promos ---------- */
+.promos{background:var(--crema)}
+.promo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.promo{position:relative;display:flex;flex-direction:column;background:var(--arena);border:1px solid var(--line);border-radius:26px;padding:30px 28px 28px;transition:transform .35s var(--ease),box-shadow .35s}
+.promo:hover{transform:translateY(-4px);box-shadow:0 30px 50px -36px rgba(59,46,42,.6)}
+.promo-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:26px}
+.promo-num{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.promo-badge{font-size:12px;font-weight:700;padding:7px 12px;border-radius:999px;background:var(--arena-3);color:var(--cafe)}
+.promo h3{font-size:clamp(28px,2.5vw,36px)}
+.promo .for{color:var(--muted);font-size:15px;margin-top:10px}
+.promo ul{margin:24px 0 26px;display:grid;gap:11px;font-size:15px}
+.promo li{display:flex;gap:11px;align-items:flex-start}
+.promo li::before{content:"";flex:none;width:7px;height:7px;margin-top:9px;border-radius:50%;background:var(--terra)}
+.promo-foot{margin-top:auto;padding-top:22px;border-top:1px dashed var(--line);display:grid;gap:18px}
+.promo-price{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.promo-price .sessions{font-size:13.5px;font-weight:700;color:var(--muted)}
+.promo-price .price{font-family:var(--serif);font-size:38px;line-height:1}
+.promo-price .price small{font-family:var(--sans);font-size:12px;font-weight:600;color:var(--muted);display:block;text-align:right;margin-top:4px}
+.promo .btn{width:100%}
+.promo.feat{overflow:hidden;background:var(--cafe);color:var(--arena);border-color:var(--cafe)}
+.promo.feat .promo-num,.promo.feat .for,.promo.feat .sessions,.promo.feat .price small{color:var(--muted-on-dark)}
+.promo.feat .promo-badge{background:var(--sol);color:var(--cafe)}
+.promo.feat li::before{background:var(--sol)}
+.promo.feat .promo-foot{border-color:var(--line-dark)}
+.promo.feat .glow{position:absolute;right:-60px;top:-60px;width:220px;height:110px;border-radius:220px 220px 0 0;background:radial-gradient(circle at 50% 100%,rgba(217,166,90,.45),transparent 70%);transform:rotate(180deg);pointer-events:none}
+.promo-note{margin-top:26px;font-size:13.5px;color:var(--muted);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.pill-edit{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px;border:1px dashed var(--terra);color:var(--terra-deep)}
+
+/* ---------- tratamientos ---------- */
+.trat-block{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.trat-block + .trat-block{margin-top:clamp(80px,9vw,130px)}
+.trat-block.rev{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.trat-block.rev .trat-media{order:2}
+.trat-media{position:sticky;top:96px}
+.trat-media figure{margin:0;position:relative;border-radius:200px 200px 24px 24px;overflow:hidden;aspect-ratio:4/5.2;background:var(--arena-2)}
+.trat-media img{width:100%;height:100%;object-fit:cover}
+.trat-media figcaption{position:absolute;left:18px;bottom:18px;background:rgba(251,247,242,.92);padding:9px 14px;border-radius:999px;font-size:13px;font-weight:700}
+.trat-intro h3{font-size:clamp(40px,4.4vw,64px)}
+.trat-intro h3 em{color:var(--terra-deep)}
+.trat-intro p{color:var(--muted);margin-top:14px;max-width:32em}
+.trat-list{margin-top:36px;border-top:1px solid var(--line)}
+.trat{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 24px;padding:24px 0;border-bottom:1px solid var(--line);align-items:start}
+.trat h4{font-family:var(--serif);font-weight:400;font-size:25px;line-height:1.15;margin:0}
+.trat .what{color:var(--muted);font-size:15px;margin-top:6px;max-width:34em}
+.trat .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;background:var(--arena-2);color:var(--cafe)}
+.chip.s{background:transparent;border:1px solid var(--line)}
+.trat .ask{align-self:center;display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;text-decoration:none;padding:11px 15px;border-radius:999px;border:1.5px solid var(--line);transition:background .2s,border-color .2s,color .2s}
+.trat .ask svg{width:16px;height:16px;color:var(--wa)}
+.trat .ask:hover{background:var(--cafe);color:var(--arena);border-color:var(--cafe)}
+.trat .ask:hover svg{color:#4ADE80}
+.trat-foot{margin-top:24px;font-size:14px;color:var(--muted)}
+.trat-foot a{font-weight:700;color:var(--cafe)}
+
+/* ---------- por qué ---------- */
+.why{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:min(92svh,860px)}
+.why-media{position:relative;overflow:hidden}
+.why-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.why-copy{padding:clamp(72px,9vw,130px) clamp(20px,6vw,96px);display:flex;flex-direction:column;justify-content:center}
+.why-list{margin-top:44px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 32px}
+.why-item svg{width:40px;height:40px;color:var(--sol)}
+.why-item h3{font-size:24px;margin:16px 0 8px}
+.why-item p{font-size:15px;color:var(--muted-on-dark)}
+.why-quote{margin-top:48px;padding-top:28px;border-top:1px solid var(--line-dark);font-family:var(--serif);font-size:22px;line-height:1.35;font-style:italic}
+.why-quote span{display:block;font-family:var(--sans);font-style:normal;font-size:13px;font-weight:600;color:var(--muted-on-dark);margin-top:10px}
+
+/* ---------- primera visita ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;counter-reset:s;position:relative}
+.step{position:relative;padding:34px 30px 32px;border-radius:24px;background:var(--crema);border:1px solid var(--line)}
+.step .n{font-family:var(--serif);font-size:84px;line-height:.8;color:var(--terra)}
+.step h3{font-size:28px;margin:26px 0 10px}
+.step p{color:var(--muted);font-size:15.5px}
+.step .tag{display:inline-block;margin-top:18px;font-size:12.5px;font-weight:700;color:var(--sol-deep)}
+.visit-cta{margin-top:40px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:space-between;padding:26px 30px;border-radius:24px;background:var(--arena-2)}
+.visit-cta p{font-family:var(--serif);font-size:clamp(22px,2.2vw,30px);line-height:1.2}
+
+/* ---------- testimonios ---------- */
+.testi{background:var(--crema)}
+.testi-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(32px,5vw,80px);align-items:start}
+.score{position:sticky;top:110px}
+.score .num{font-family:var(--serif);font-size:clamp(120px,13vw,190px);line-height:.85;letter-spacing:-.03em}
+.score .stars{display:flex;gap:4px;color:var(--sol);margin:18px 0 10px}
+.score .stars svg{width:24px;height:24px}
+.score p{color:var(--muted);font-size:15px}
+.score .btn{margin-top:28px}
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.q{margin:0;padding:30px 28px;border-radius:24px;background:var(--arena);display:flex;flex-direction:column;justify-content:space-between;gap:26px;min-height:240px}
+.q:nth-child(even){margin-top:40px;margin-bottom:-40px}
+.q blockquote{margin:0;font-family:var(--serif);font-size:clamp(22px,1.9vw,27px);line-height:1.28}
+.q blockquote::before{content:"“";display:block;font-size:64px;line-height:.6;color:var(--terra);margin-bottom:6px}
+.q figcaption{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:700}
+.q figcaption .av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--arena-3);font-size:14px}
+.q figcaption small{display:block;font-weight:500;color:var(--muted);font-size:12.5px}
+
+/* ---------- faq ---------- */
+.faq-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.faq-side{position:sticky;top:110px}
+.faq-side figure{margin:34px 0 0;border-radius:24px;overflow:hidden;aspect-ratio:4/3.4}
+.faq-side img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0;font-family:var(--serif);font-size:clamp(21px,1.9vw,26px);line-height:1.2}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--line);position:relative;transition:background .25s,border-color .25s,transform .35s var(--ease)}
+summary .pm::before,summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:currentColor;transform:translate(-50%,-50%)}
+summary .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .35s var(--ease)}
+details[open] summary .pm{background:var(--cafe);color:var(--arena);border-color:var(--cafe)}
+details[open] summary .pm::after{transform:translate(-50%,-50%) rotate(0)}
+details .ans{padding:0 56px 28px 0;color:var(--muted);font-size:16px;max-width:40em}
+details .ans p + p{margin-top:10px}
+
+/* ---------- contacto ---------- */
+.contact-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:stretch}
+.contact h2{font-size:clamp(40px,4.6vw,68px)}
+.contact-list{margin-top:40px;display:grid;gap:0;border-top:1px solid var(--line-dark)}
+.contact-list li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:18px 0;border-bottom:1px solid var(--line-dark);font-size:15.5px}
+.contact-list .k{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-on-dark);padding-top:3px}
+.contact-list a{text-decoration:none;border-bottom:1px solid rgba(244,237,228,.35)}
+.contact-list a:hover{border-color:var(--sol)}
+.tbd{display:inline-block;margin-left:8px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--sol);border:1px dashed rgba(217,166,90,.6);padding:2px 8px;border-radius:999px;vertical-align:2px}
+.contact-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.map{position:relative;border-radius:28px;overflow:hidden;min-height:440px;background:var(--cafe-2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.28) saturate(.85) contrast(.98)}
+.map-card{position:absolute;left:18px;bottom:18px;right:18px;max-width:330px;background:var(--crema);color:var(--cafe);border-radius:18px;padding:16px 18px;display:flex;gap:14px;align-items:center;box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
+.map-card .pin{flex:none;width:42px;height:42px;border-radius:50%;background:var(--cafe);display:grid;place-items:center}
+.map-card .pin svg{width:20px;height:20px;color:var(--sol)}
+.map-card b{display:block;font-size:15px}
+.map-card span{font-size:13px;color:var(--muted)}
+.map-card a{font-size:13px;font-weight:700}
+
+/* ---------- footer ---------- */
+footer{background:#2C2220;color:var(--muted-on-dark);font-size:13.5px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-block:30px}
+.foot .logo-word{color:var(--arena);font-size:22px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--arena)}
+
+/* ---------- whatsapp flotante ---------- */
+.fab{position:fixed;right:18px;bottom:18px;z-index:50;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;font-size:14.5px;padding:14px 18px 14px 15px;border-radius:999px;box-shadow:0 16px 30px -12px rgba(20,90,50,.6);transform:translateY(120px);transition:transform .5s var(--ease)}
+.fab.on{transform:none}
+.fab svg{width:24px;height:24px}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.up{animation:up .9s var(--ease) both}
+.up.d1{animation-delay:.08s}.up.d2{animation-delay:.16s}.up.d3{animation-delay:.24s}
+@keyframes up{from{opacity:0;transform:translateY(18px)}}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .hero-media img,.up{animation:none;transform:none}
+  *{transition-duration:.01ms!important}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .nav-links{display:none}
+  .promo-grid{grid-template-columns:1fr;max-width:560px;margin-inline:auto}
+  .steps{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-media{order:-1;height:min(56svh,520px);min-height:360px}
+  .hero-media img{object-position:50% 56%}
+  .hero-media::after{background:linear-gradient(180deg,rgba(244,237,228,.55),transparent 22%,transparent 60%,#F4EDE4 92%)}
+  .hero-copy{padding:8px clamp(16px,4.5vw,48px) 56px;margin-top:-40px;position:relative;z-index:2}
+  .hero h1{margin-top:16px}
+  .hero-tag{display:none}
+  .rating-chip{bottom:52px;padding:10px 14px 10px 12px;gap:10px}
+  .rating-chip .big{font-size:30px}
+  .demo-bar{font-size:11.5px;padding:7px 14px}
+  .hero h1{font-size:clamp(36px,10vw,46px)}
+  .site-header{position:absolute;top:auto}
+  .trat-block,.trat-block.rev{grid-template-columns:1fr}
+  .trat-block.rev .trat-media{order:0}
+  .trat-media{position:relative;top:0}
+  .trat-media figure{aspect-ratio:4/3.6;border-radius:160px 160px 22px 22px;max-width:560px}
+  .why{grid-template-columns:1fr}
+  .why-media{height:72svh;min-height:420px}
+  .testi-grid,.faq-grid,.contact-grid{grid-template-columns:1fr}
+  .score,.faq-side{position:relative;top:0}
+  .faq-side figure{display:none}
+  .map{min-height:380px}
+}
+@media (max-width:640px){
+  body{font-size:15.5px}
+  .nav{padding-block:16px}
+  .nav .btn{display:none}
+  .logo-word{font-size:24px}
+  .hero-ctas .btn{flex:1 1 100%}
+  .hero-facts{gap:10px 20px}
+  .why-list{grid-template-columns:1fr;gap:28px}
+  .quotes{grid-template-columns:1fr}
+  .q:nth-child(even){margin:0}
+  .q{min-height:0}
+  .trat{grid-template-columns:1fr}
+  .trat .ask{justify-self:start;margin-top:6px}
+  .contact-list li{grid-template-columns:1fr;gap:4px}
+  details .ans{padding-right:0}
+  .visit-cta .btn{width:100%}
+  .fab span{display:none}
+  .fab{padding:15px}
+}
+@media (prefers-reduced-motion:reduce){ .strip ul{animation:none;width:auto;flex-wrap:wrap;justify-content:center} .strip li[aria-hidden]{display:none} }
+</style>
+</head>
+<body>
+
+<!-- Aviso de demo: borrar este bloque cuando la web quede con datos reales -->
+<div class="demo-bar"><b>Vista previa para Solnand.</b> Tratamientos, promos, precios y horarios son de ejemplo: los ajustamos juntas con tu info real.</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.08.9.92-3-.2-.31a8.2 8.2 0 1 1 6.86 3.74Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.86 2.04 4.77 4.77 0 0 0 1 2.53 10.9 10.9 0 0 0 4.18 3.7c1.56.67 2.17.73 2.95.61.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.07-.11-.23-.17-.48-.3Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3.5 12.3V4.5a1 1 0 0 1 1-1h7.8l8.2 8.2a1 1 0 0 1 0 1.4l-6.6 6.6a1 1 0 0 1-1.4 0z"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<!-- logo reutilizable: semicírculo de sol sobre el horizonte -->
+<template id="logo-tpl">
+  <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#3B2E2A"/><path d="M9 25a11 11 0 0 1 22 0z" fill="#D9A65A"/><rect x="7" y="27.5" width="26" height="1.8" rx=".9" fill="#F4EDE4"/></svg>
+</template>
+
+<!-- Header que aparece al hacer scroll -->
+<div class="sticky-nav" id="stickyNav" aria-hidden="true">
+  <div class="wrap nav">
+    <a class="logo" href="#top" tabindex="-1"><span data-logo></span><span class="logo-word">Solnand</span></a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#promos" tabindex="-1">Promos</a><a href="#tratamientos" tabindex="-1">Tratamientos</a><a href="#primera-visita" tabindex="-1">Primera visita</a><a href="#opiniones" tabindex="-1">Opiniones</a><a href="#contacto" tabindex="-1">Contacto</a>
+    </nav>
+    <a class="btn btn-wa" data-wa="Hola Solnand! Quiero reservar una sesión." href="#contacto" tabindex="-1"><span class="dot"></span>Reservá por WhatsApp</a>
+  </div>
+</div>
+
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Solnand, inicio"><span data-logo></span><span><span class="logo-word">Solnand</span><span class="logo-sub">Centro de estética</span></span></a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#promos">Promos</a><a href="#tratamientos">Tratamientos</a><a href="#primera-visita">Primera visita</a><a href="#opiniones">Opiniones</a><a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-wa" data-wa="Hola Solnand! Quiero reservar una sesión." href="#contacto"><span class="dot"></span>Reservá por WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <span class="eyebrow up">Centro de estética · Godoy Cruz</span>
+    <h1 id="hero-title" class="up d1">Tratamientos corporales y faciales con resultados <em>desde la primera sesión.</em></h1>
+    <p class="hero-sub up d2">Centro de estética en Godoy Cruz. Atención personalizada, horarios amplios y promos todo el año.</p>
+    <div class="hero-ctas up d3">
+      <a class="btn btn-wa" data-wa="Hola Solnand! Quiero reservar una sesión." href="#contacto"><svg><use href="#i-wa"/></svg>Reservá por WhatsApp</a>
+      <a class="btn btn-line" href="#promos">Ver promos del mes</a>
+    </div>
+    <ul class="hero-facts up d3">
+      <li><svg><use href="#i-pin"/></svg>Figueroa Alcorta 161</li>
+      <li><svg><use href="#i-clock"/></svg>Horarios amplios</li>
+      <li><svg><use href="#i-tag"/></svg>Promos todo el año</li>
+    </ul>
+  </div>
+  <div class="hero-media">
+    <img src="img/hero-sol.jpg" alt="Mujer con los ojos cerrados disfrutando del sol, piel luminosa" width="1500" height="2250" fetchpriority="high">
+    <a class="rating-chip" href="#opiniones">
+      <span class="big">4,7</span>
+      <span><span class="stars" aria-hidden="true">★★★★★</span><small>21 opiniones en Google</small></span>
+    </a>
+    <span class="hero-tag" aria-hidden="true">Godoy Cruz · Mendoza</span>
+  </div>
+</section>
+
+<div class="strip" aria-label="Algunos tratamientos">
+  <ul>
+    <li>Radiofrecuencia</li><li>Drenaje linfático</li><li>Limpieza profunda</li><li>Cavitación</li><li>Peeling</li><li>Dermaplaning</li><li>Ondas rusas</li><li>Antiage</li>
+    <li aria-hidden="true">Radiofrecuencia</li><li aria-hidden="true">Drenaje linfático</li><li aria-hidden="true">Limpieza profunda</li><li aria-hidden="true">Cavitación</li><li aria-hidden="true">Peeling</li><li aria-hidden="true">Dermaplaning</li><li aria-hidden="true">Ondas rusas</li><li aria-hidden="true">Antiage</li>
+  </ul>
+</div>
+
+<!-- ============ PROMOS ============
+     Para actualizar: cambiá nombre, ítems, sesiones, precio y el mensaje de data-wa de cada tarjeta. -->
+<section class="sec promos" id="promos" aria-labelledby="promos-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow rv">Lo que más eligen nuestras clientas</span>
+        <h2 id="promos-title" class="rv d1"><span data-month>Promos del mes</span>,<br><em>pensadas para que se note.</em></h2>
+      </div>
+      <p class="rv d2">Combos armados para potenciar resultados y cuidar tu bolsillo. Escribinos y te reservamos el lugar con la promo vigente.</p>
+    </div>
+
+    <div class="promo-grid">
+      <article class="promo rv">
+        <div class="promo-top"><span class="promo-num">Combo 01</span><span class="promo-badge">Corporal</span></div>
+        <h3>Plan Reductor</h3>
+        <p class="for">Para bajar centímetros en abdomen, cintura o piernas.</p>
+        <ul>
+          <li>Radiofrecuencia + cavitación</li>
+          <li>Drenaje linfático de cierre</li>
+          <li>Medición al inicio y al final</li>
+        </ul>
+        <div class="promo-foot">
+          <div class="promo-price"><span class="sessions">8 sesiones</span><span class="price">$ 00.000<small>precio de ejemplo</small></span></div>
+          <a class="btn btn-line" data-wa="Hola Solnand! Quiero la promo Plan Reductor (8 sesiones)." href="#contacto">Quiero esta promo</a>
+        </div>
+      </article>
+
+      <article class="promo feat rv d1">
+        <span class="glow" aria-hidden="true"></span>
+        <div class="promo-top"><span class="promo-num">Combo 02</span><span class="promo-badge">La más pedida</span></div>
+        <h3>Cuerpo + Rostro</h3>
+        <p class="for">Lo mejor de los dos mundos, en un solo plan.</p>
+        <ul>
+          <li>Sesiones corporales a elección</li>
+          <li>Limpieza facial profunda</li>
+          <li>Hidratación con mascarilla</li>
+        </ul>
+        <div class="promo-foot">
+          <div class="promo-price"><span class="sessions">6 + 2 sesiones</span><span class="price">$ 00.000<small>precio de ejemplo</small></span></div>
+          <a class="btn btn-sol" data-wa="Hola Solnand! Quiero la promo Cuerpo + Rostro." href="#contacto"><svg><use href="#i-wa"/></svg>Quiero esta promo</a>
+        </div>
+      </article>
+
+      <article class="promo rv d2">
+        <div class="promo-top"><span class="promo-num">Combo 03</span><span class="promo-badge">Facial</span></div>
+        <h3>Piel Luminosa</h3>
+        <p class="for">Para recuperar brillo, textura pareja y frescura.</p>
+        <ul>
+          <li>Limpieza profunda</li>
+          <li>Peeling suave o dermaplaning</li>
+          <li>Hidratación antiage</li>
+        </ul>
+        <div class="promo-foot">
+          <div class="promo-price"><span class="sessions">3 sesiones</span><span class="price">$ 00.000<small>precio de ejemplo</small></span></div>
+          <a class="btn btn-line" data-wa="Hola Solnand! Quiero la promo Piel Luminosa (3 sesiones)." href="#contacto">Quiero esta promo</a>
+        </div>
+      </article>
+    </div>
+    <p class="promo-note rv"><span class="pill-edit">Editable</span> Las promos cambian cada mes: se actualizan en minutos, sin tocar el resto de la web.</p>
+  </div>
+</section>
+
+<!-- ============ TRATAMIENTOS ============ -->
+<section class="sec" id="tratamientos" aria-labelledby="trat-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow rv">Tratamientos</span>
+        <h2 id="trat-title" class="rv d1">Un plan para cada objetivo,<br><em>con resultados que se ven.</em></h2>
+      </div>
+      <p class="rv d2">Antes de empezar evaluamos tu caso y te recomendamos cuántas sesiones necesitás. Sin vueltas y sin venderte de más.</p>
+    </div>
+
+    <div class="trat-block">
+      <div class="trat-media rv">
+        <figure><img src="img/corporales.jpg" alt="Piernas con piel lisa e hidratada" loading="lazy" width="736" height="1104"><figcaption>Corporales</figcaption></figure>
+      </div>
+      <div>
+        <div class="trat-intro rv">
+          <h3>Corporales: <em>moldeá, reafirmá, desinflamá.</em></h3>
+          <p>Aparatología y técnicas manuales para reducir medidas, mejorar la textura de la piel y sentirte más liviana.</p>
+        </div>
+        <ul class="trat-list">
+          <li class="trat rv">
+            <div><h4>Reductores</h4><p class="what">Radiofrecuencia, cavitación y electrodos combinados para bajar centímetros en zonas localizadas.</p>
+              <div class="meta"><span class="chip">8 a 10 sesiones</span><span class="chip s">Abdomen · flancos · piernas</span></div></div>
+            <a class="ask" data-wa="Hola Solnand! Quiero info sobre tratamientos reductores." href="#contacto"><svg><use href="#i-wa"/></svg>Consultar</a>
+          </li>
+          <li class="trat rv">
+            <div><h4>Drenaje linfático</h4><p class="what">Masaje suave que ayuda a eliminar líquidos retenidos y desinflama. Ideal para piernas cansadas.</p>
+              <div class="meta"><span class="chip">6 a 8 sesiones</span><span class="chip s">Retención · hinchazón</span></div></div>
+            <a class="ask" data-wa="Hola Solnand! Quiero info sobre drenaje linfático." href="#contacto"><svg><use href="#i-wa"/></svg>Consultar</a>
+          </li>
+          <li class="trat rv">
+            <div><h4>Anticelulitis</h4><p class="what">Protocolo que activa la circulación y mejora el aspecto de piel de naranja.</p>
+              <div class="meta"><span class="chip">8 a 10 sesiones</span><span class="chip s">Glúteos · piernas</span></div></div>
+            <a class="ask" data-wa="Hola Solnand! Quiero info sobre el tratamiento anticelulitis." href="#contacto"><svg><use href="#i-wa"/></svg>Consultar</a>
+          </li>
+          <li class="trat rv">
+            <div><h4>Tonificación con ondas rusas</h4><p class="what">Electroestimulación que trabaja el músculo para reafirmar y dar firmeza.</p>
+              <div class="meta"><span class="chip">10 sesiones</span><span class="chip s">Glúteos · abdomen · brazos</span></div></div>
+            <a class="ask" data-wa="Hola Solnand! Quiero info sobre tonificación con ondas rusas." href="#contacto"><svg><use href="#i-wa"/></svg>Consultar</a>
+          </li>
+          <li class="trat rv">
+            <div><h4>Masajes</h4><p class="what">Descontracturantes y modeladores, para soltar tensiones o complementar tu plan.</p>
+              <div class="meta"><span class="chip">Sesión única o pack</span></div></div>
+            <a class="ask" data-wa="Hola Solnand! Quiero info sobre masajes." href="#contacto"><svg><use href="#i-wa"/></svg>Consultar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="trat-block rev">
+      <div class="trat-media rv">
+        <figure><img src="img/faciales.jpg" alt="Rostro con piel hidratada y luminosa" loading="lazy" width="736" height="1104"><figcaption>Faciales</figcaption></figure>
+      </div>
+      <div>
+        <div class="trat-intro rv">
+          <h3>Faciales: <em>piel limpia, pareja y con luz.</em></h3>
+          <p>Tratamientos para cada tipo de piel y cada etapa, desde una limpieza a fondo hasta protocolos antiage.</p>
+        </div>
+        <ul class="trat-list">
+          <li class="trat rv">
+            <div><h4>Limpieza facial profunda</h4><p class="what">Extracción, exfoliación e hidratación. La base de cualquier rutina y un mimo que se nota al toque.</p>
+              <div class="meta"><span class="chip">1 por mes</span><span class="chip s">Todo tipo de piel</span></div></div>
+            <a class="ask" data-wa="Hola Solnand! Quiero reservar una limpieza facial profunda." href="#contacto"><svg><use href="#i-wa"/></svg>Consultar</a>
+          </li>
+          <li class="trat rv">
+            <div><h4>Peeling</h4><p class="what">Renueva la capa superficial de la piel para emparejar el tono y mejorar la textura.</p>
+              <div class="meta"><span class="chip">3 a 4 sesiones</span><span class="chip s">Textura · tono</span></div></div>
+            <a class="ask" data-wa="Hola Solnand! Quiero info sobre peeling." href="#contacto"><svg><use href="#i-wa"/></svg>Consultar</a>
+          </li>
+          <li class="trat rv">
+            <div><h4>Dermaplaning</h4><p class="what">Exfoliación que retira células muertas y vello fino. Piel suave y maquillaje que queda perfecto.</p>
+              <div class="meta"><span class="chip">Sesión única</span><span class="chip s">Luminosidad</span></div></div>
+            <a class="ask" data-wa="Hola Solnand! Quiero info sobre dermaplaning." href="#contacto"><svg><use href="#i-wa"/></svg>Consultar</a>
+          </li>
+          <li class="trat rv">
+            <div><h4>Hidratación y antiage</h4><p class="what">Activos que nutren y reafirman para suavizar líneas finas y devolver frescura.</p>
+              <div class="meta"><span class="chip">4 a 6 sesiones</span><span class="chip s">Líneas finas · firmeza</span></div></div>
+            <a class="ask" data-wa="Hola Solnand! Quiero info sobre tratamientos antiage." href="#contacto"><svg><use href="#i-wa"/></svg>Consultar</a>
+          </li>
+          <li class="trat rv">
+            <div><h4>Acné y manchas</h4><p class="what">Protocolos para controlar brotes, cerrar poros y aclarar manchas de forma progresiva.</p>
+              <div class="meta"><span class="chip">Según evaluación</span><span class="chip s">Acné · manchas</span></div></div>
+            <a class="ask" data-wa="Hola Solnand! Quiero info sobre tratamientos para acné y manchas." href="#contacto"><svg><use href="#i-wa"/></svg>Consultar</a>
+          </li>
+        </ul>
+        <p class="trat-foot rv">¿Buscás depilación u otro tratamiento? <a data-wa="Hola Solnand! Quería consultar por otro tratamiento." href="#contacto">Escribinos y te contamos.</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POR QUÉ SOLNAND ============ -->
+<section class="why dark" aria-labelledby="why-title">
+  <div class="why-media">
+    <img src="img/piel-luz.jpg" alt="Mujer de perfil con luz cálida sobre la piel" loading="lazy" width="1200" height="1500">
+  </div>
+  <div class="why-copy">
+    <span class="eyebrow rv">Por qué Solnand</span>
+    <h2 class="h2 rv d1">Lo que dicen nuestras clientas, <em>en cuatro puntos.</em></h2>
+    <ul class="why-list">
+      <li class="why-item rv">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 30a14 14 0 0 1 28 0"/><path d="M3 34h34"/><path d="M20 6v5M8.5 11l3.2 3.6M31.5 11l-3.2 3.6"/></svg>
+        <h3>Resultados visibles</h3><p>Muchas notan el cambio desde la primera sesión, y lo medimos para que lo veas.</p>
+      </li>
+      <li class="why-item rv d1">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="13" r="6"/><path d="M8 34c1.5-6.5 6.3-10 12-10s10.5 3.5 12 10"/></svg>
+        <h3>Atención personalizada</h3><p>Te escuchamos, evaluamos tu caso y armamos un plan a tu medida.</p>
+      </li>
+      <li class="why-item rv d2">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="20" cy="20" r="14"/><path d="M20 12v8l5.5 3.5"/></svg>
+        <h3>Horarios amplios</h3><p>Turnos que se adaptan a tu rutina, antes o después del trabajo.</p>
+      </li>
+      <li class="why-item rv d3">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 5l12 4.5v9c0 8-5.4 13.4-12 16.5C13.4 31.9 8 26.5 8 18.5v-9z"/><path d="M14.5 19.5l4 4 7-8"/></svg>
+        <h3>Limpio y seguro</h3><p>Un espacio cuidado, higiene en cada detalle y aparatología en regla.</p>
+      </li>
+    </ul>
+    <p class="why-quote rv">“Trato excelente y mucho profesionalismo: un lugar limpio, seguro y muy recomendable.”<span>Reseña en Google</span></p>
+  </div>
+</section>
+
+<!-- ============ PRIMERA VISITA ============ -->
+<section class="sec" id="primera-visita" aria-labelledby="visit-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow rv">Tu primera visita</span>
+        <h2 id="visit-title" class="rv d1">Así empezamos, <em>paso a paso.</em></h2>
+      </div>
+      <p class="rv d2">Si nunca te hiciste un tratamiento, tranqui: te explicamos todo antes de empezar.</p>
+    </div>
+    <ol class="steps" style="list-style:none;margin:0;padding:0">
+      <li class="step rv"><span class="n">1</span><h3>Evaluación</h3><p>Charlamos sobre lo que querés lograr y analizamos tu piel o la zona a tratar.</p><span class="tag">Sin cargo · a confirmar</span></li>
+      <li class="step rv d1"><span class="n">2</span><h3>Tu plan de sesiones</h3><p>Te proponemos el tratamiento ideal, cuántas sesiones necesitás y la promo que más te conviene.</p><span class="tag">Claro y sin sorpresas</span></li>
+      <li class="step rv d2"><span class="n">3</span><h3>Seguimiento</h3><p>Medimos y registramos tu avance sesión a sesión para ajustar y que veas el resultado.</p><span class="tag">Resultados que se miden</span></li>
+    </ol>
+    <div class="visit-cta rv">
+      <p>¿Arrancamos? Reservá tu evaluación por WhatsApp.</p>
+      <a class="btn btn-wa" data-wa="Hola Solnand! Quiero reservar mi primera evaluación." href="#contacto"><svg><use href="#i-wa"/></svg>Reservar evaluación</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section class="sec testi" id="opiniones" aria-labelledby="testi-title">
+  <div class="wrap testi-grid">
+    <div class="score">
+      <span class="eyebrow rv">Opiniones</span>
+      <h2 id="testi-title" class="sr">Opiniones de clientas</h2>
+      <div class="num rv d1">4,7</div>
+      <div class="stars rv d1" aria-label="4,7 de 5 estrellas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg style="opacity:.45"><use href="#i-star"/></svg></div>
+      <p class="rv d2">Promedio de 21 opiniones en Google.<br>Gracias a cada clienta que nos eligió.</p>
+      <a class="btn btn-line rv d2" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Solnand+Centro+Est%C3%A9tica+Figueroa+Alcorta+161+Godoy+Cruz">Dejá tu reseña <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="quotes">
+      <figure class="q rv"><blockquote>Vi resultados desde la primera sesión, y la atención es increíble.</blockquote><figcaption><span class="av">C</span><span>Carolina G.<small>Reseña en Google</small></span></figcaption></figure>
+      <figure class="q rv d1"><blockquote>Muy buena atención y tratamientos de primera.</blockquote><figcaption><span class="av">M</span><span>María Angélica M.<small>Reseña en Google</small></span></figcaption></figure>
+      <figure class="q rv"><blockquote>Excelente atención, muy buenas promos y horarios amplios.</blockquote><figcaption><span class="av">A</span><span>Alejandra R.<small>Reseña en Google</small></span></figcaption></figure>
+      <figure class="q rv d1"><blockquote>Trato excelente y mucho profesionalismo: un lugar limpio, seguro y muy recomendable.</blockquote><figcaption><span class="av">★</span><span>Clienta de Solnand<small>Reseña en Google</small></span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <span class="eyebrow rv">Preguntas frecuentes</span>
+      <h2 id="faq-title" class="h2 rv d1">Lo que todas <em>preguntan antes.</em></h2>
+      <p class="rv d2" style="color:var(--muted);margin-top:16px">¿Te quedó otra duda? <a data-wa="Hola Solnand! Tengo una consulta." href="#contacto" style="font-weight:700">Escribinos por WhatsApp</a>.</p>
+      <figure class="rv d2"><img src="img/perfil.jpg" alt="Perfil de mujer con piel natural" loading="lazy" width="736" height="1104"></figure>
+    </div>
+    <div class="rv">
+      <details open>
+        <summary>¿Cuántas sesiones necesito?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans"><p>Depende del tratamiento y de tu objetivo. Como referencia, un plan reductor suele ser de 8 a 10 sesiones y un facial de 1 a 4. En la evaluación te decimos exactamente cuántas necesitás.</p></div>
+      </details>
+      <details>
+        <summary>¿Los tratamientos duelen?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans"><p>No. La mayoría son muy tolerables: en algunos vas a sentir calor, un cosquilleo o presión. Siempre regulamos la intensidad según cómo te sientas.</p></div>
+      </details>
+      <details>
+        <summary>¿Qué medios de pago aceptan?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans"><p>Efectivo, transferencia y Mercado Pago <span class="pill-edit" style="margin-left:4px">a confirmar</span></p></div>
+      </details>
+      <details>
+        <summary>¿Puedo pagar en cuotas?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans"><p>Consultanos por las opciones de cuotas vigentes para los packs y promos del mes. <span class="pill-edit" style="margin-left:4px">a confirmar</span></p></div>
+      </details>
+      <details>
+        <summary>¿Cuándo voy a ver resultados?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans"><p>Muchas clientas notan cambios desde la primera sesión. El resultado completo se consolida al terminar el plan, y lo vamos midiendo para que lo veas.</p></div>
+      </details>
+      <details>
+        <summary>¿Cómo reservo un turno?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans"><p>Escribinos por WhatsApp, contanos qué tratamiento te interesa y te pasamos los horarios disponibles. Así de simple.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="sec dark contact" id="contacto" aria-labelledby="contact-title">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow rv">Contacto</span>
+      <h2 id="contact-title" class="rv d1">Te esperamos <em>en Godoy Cruz.</em></h2>
+      <ul class="contact-list rv d2">
+        <li><span class="k">Dirección</span><span>Figueroa Alcorta 161, Godoy Cruz, Mendoza</span></li>
+        <li><span class="k">WhatsApp</span><span><a data-wa="Hola Solnand! Quiero reservar una sesión." href="#">+54 00 0000-0000</a><span class="tbd">a completar</span></span></li>
+        <li><span class="k">Horarios</span><span>Lunes a viernes · 9 a 20 h<br>Sábados · 9 a 13 h<span class="tbd">a completar</span></span></li>
+        <li><span class="k">Redes</span><span><a href="https://www.facebook.com/centroesteticasolnand0/" target="_blank" rel="noopener">Facebook</a> &nbsp;·&nbsp; <a href="#">Instagram</a><span class="tbd">a completar</span></span></li>
+      </ul>
+      <div class="contact-ctas rv d3">
+        <a class="btn btn-sol" data-wa="Hola Solnand! Quiero reservar una sesión." href="#"><svg><use href="#i-wa"/></svg>Reservá por WhatsApp</a>
+        <a class="btn btn-line" style="color:var(--arena);border-color:rgba(244,237,228,.5)" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Figueroa+Alcorta+161,+Godoy+Cruz,+Mendoza">Cómo llegar <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="map rv d1">
+      <iframe title="Mapa: Solnand, Figueroa Alcorta 161, Godoy Cruz" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Figueroa+Alcorta+161,+Godoy+Cruz,+Mendoza,+Argentina&z=16&output=embed"></iframe>
+      <div class="map-card">
+        <span class="pin"><svg><use href="#i-pin"/></svg></span>
+        <span><b>Solnand Centro de Estética</b><span>Figueroa Alcorta 161 · Godoy Cruz</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="logo" href="#top"><span data-logo></span><span class="logo-word">Solnand</span></a>
+    <span>Centro de estética corporal y facial · Godoy Cruz, Mendoza</span>
+    <span>© <span data-year>2026</span> Solnand</span>
+  </div>
+</footer>
+
+<a class="fab" id="fab" data-wa="Hola Solnand! Quiero reservar una sesión." href="#contacto" aria-label="Escribinos por WhatsApp"><svg><use href="#i-wa"/></svg><span>Reservá tu sesión</span></a>
+
+<script>
+/* ===== CONFIGURACIÓN: cambiá el número acá (formato internacional, sin + ni espacios) ===== */
+const WHATSAPP = "540000000000";
+
+document.querySelectorAll("[data-wa]").forEach(a => {
+  a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(a.dataset.wa);
+  a.target = "_blank"; a.rel = "noopener";
+});
+
+const logo = document.getElementById("logo-tpl");
+document.querySelectorAll("[data-logo]").forEach(s => s.replaceWith(logo.content.cloneNode(true)));
+
+const meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+const now = new Date();
+document.querySelectorAll("[data-month]").forEach(el => el.textContent = "Promos de " + meses[now.getMonth()]);
+document.querySelectorAll("[data-year]").forEach(el => el.textContent = now.getFullYear());
+
+// header fijo + botón flotante después del hero
+const sticky = document.getElementById("stickyNav"), fab = document.getElementById("fab");
+const hero = document.querySelector(".hero");
+new IntersectionObserver(([e]) => {
+  const past = !e.isIntersecting;
+  sticky.classList.toggle("on", past); fab.classList.toggle("on", past);
+  sticky.setAttribute("aria-hidden", !past);
+  sticky.querySelectorAll("a").forEach(a => a.tabIndex = past ? 0 : -1);
+}, { rootMargin: "-120px 0px 0px 0px" }).observe(hero);
+
+// aparición suave
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+}), { threshold: .12, rootMargin: "0px 0px -6% 0px" });
+document.querySelectorAll(".rv").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
